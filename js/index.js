@@ -11,9 +11,13 @@ tl.to(".navb .navb-link", {opacity: 1, y: "0%", duration: .5, stagger: .25 });
 var navb = document.querySelector(".js-header");
 
 const header = () => {
-    if (this.scrollY > 0) {
-        navb.classList.add("active");
-    } else {
-        navb.classList.remove("active");
-    }
+    window.addEventListener("scroll", function() {
+        if (this.scrollY > 0) {
+            navb.classList.add("active");
+        } else {
+            navb.classList.remove("active");
+        }
+    })
 }
+
+header();
