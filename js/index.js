@@ -21,3 +21,14 @@ const header = () => {
 }
 
 header();
+
+var humbger = document.querySelector(".humbger")
+var humbgerM = document.querySelector(".humbger__menu")
+const humbgers = () => {
+    humbger.onclick = function() {
+        humbger.classList.toggle("active");
+        humbgerM.classList.toggle("active");
+    }
+}
+
+humbgers();
