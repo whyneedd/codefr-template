@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+::selection {
+  background: black;
+  color: white;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -112,6 +117,8 @@ a {
   height: 4px;
   border-radius: 5px;
   background-color: rgb(97, 125, 255);
+  box-shadow: 0 8px 15px rgb(0, 0, 0, .87);
+
 }
 .content {
   position: absolute;
@@ -156,6 +163,7 @@ a {
   color: black;
   border-radius: 8px;
   background-color: rgb(97, 125, 255);
+  box-shadow: 0 8px 15px rgb(0, 0, 0, .87);
 
   transform: translateY(110%);
   opacity: 0;
@@ -172,6 +180,46 @@ a {
   width: 100%;
   height: auto;
 }
+
+.social {
+  position: relative;
+  display: flex;
+  left: 8%;
+  top: 36em;
+  width: 300px;
+  height: 12px;
+}
+
+.social .container-s {
+  position: relative;
+  display: flex;
+  margin-right: 1em;
+}
+.container-s li {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  border-radius: 50px;
+  margin-right: 1em;
+  background-color: #ffff;
+  transform: translateY(100%);
+  opacity: 0;
+  box-shadow: 0 8px 15px rgb(0, 0, 0, .87);
+
+}
+
+.container-s ul li .s__link i {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  line-height: 1.5;
+  color: black;
+  font-size: 1.5em;
+}
+
+
 
 .humbger__menu {
   display: none;
@@ -209,6 +257,8 @@ a {
     border: none;
     appearance: none;
 
+    transform: translateX(-100%);
+    opacity: 0;
     cursor: pointer;
   }
   .humbger .bar,
@@ -240,7 +290,7 @@ a {
     top: 0;
     right: -100%;
     background-color: rgb(255, 255, 255, 0.89);
-    transition: right .5s;
+    transition: right 0.5s;
     .humb-list {
       position: absolute;
       top: 5em;
