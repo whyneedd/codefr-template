@@ -129,6 +129,10 @@ img {
   padding: 15px 45px;
   color: #fff;
   background: rgb(97, 125, 225);
+  transition: 0.4s;
+}
+.home__btn:hover {
+  background: #333;
 }
 
 /*# sourceMappingURL=style.css.map */

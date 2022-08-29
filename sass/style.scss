@@ -132,5 +132,9 @@ img {
     padding: 15px 45px;
     color: #fff;
     background: rgb(97, 125, 225);
+    transition: .4s;
+  }
+  &__btn:hover {
+    background: #333;
   }
 }
