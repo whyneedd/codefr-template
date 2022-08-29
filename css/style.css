@@ -117,7 +117,7 @@ img {
 .home__img {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 120px;
 }
 .home__btn {
   display: block;
